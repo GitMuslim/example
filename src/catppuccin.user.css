@@ -2,7 +2,7 @@
 @name           Example Catppuccin
 @namespace      github.com/mustafakhalaf-git/example
 @homepageURL    https://github.com/mustafakhalaf-git/example
-@version        1.0.1
+@version        1.0.2
 @description    Soothing pastel theme for Example
 @author         Catppuccin - mustafakhalaf-git
 @preprocessor   stylus
@@ -11,7 +11,7 @@
 @var select darktheme "Theme" ["Latte", "Frappe", "Macchiato", "Mocha"]
 ==/UserStyle== */
 
-@-moz-document regexp("http://example.(com|net|org)/") {
+@-moz-document regexp("http://example.(com|net|org|edu)/") {
     colourscheme(flavour) {
         if (flavour=="Latte") {
             --ctp-rosewater: #dc8a78;
@@ -126,7 +126,7 @@
             --ctp-crust: #11111b;
         }
     }
-    
+
     body {
         if (darktheme=="Latte")     { colourscheme(Latte) }
         if (darktheme=="Frappe")    { colourscheme(Frappe) }
