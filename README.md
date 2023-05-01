@@ -37,16 +37,9 @@
 
 ## Usage
 
-1. Clone this repository locally
-2. Open the app's settings
-3. Select `import theme` and browse to where you cloned Catppuccin
-4. Select it
-
-<!-- this section is optional -->
-## 🙋 FAQ
-
--	Q: **_"Where can I find the doc?"_**\
-	A: Run `:help theme`
+1. Install Stylus extension for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)
+2. Then install the theme with Stylus ([click on the link](https://raw.githubusercontent.com/mustafakhalaf-git/google/main/src/catppuccin.user.css)):
+3. Choose your theme in Stylus Options
 
 ## 💝 Thanks to
 
