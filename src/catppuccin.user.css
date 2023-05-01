@@ -1,12 +1,12 @@
 /* ==UserStyle==
 @name           Example Catppuccin
-@namespace      github.com/catppuccin/example
-@homepageURL    https://github.com/catppuccin/example
-@version        1.0.0
+@namespace      github.com/mustafakhalaf-git/example
+@homepageURL    https://github.com/mustafakhalaf-git/example
+@version        1.0.1
 @description    Soothing pastel theme for Example
 @author         Catppuccin - mustafakhalaf-git
 @preprocessor   stylus
-@updateURL      https://github.com/catppuccin/example/raw/main/src/catppuccin.user.css
+@updateURL      https://github.com/mustafakhalaf-git/example/raw/main/src/catppuccin.user.css
 @license        MIT
 @var select darktheme "Theme" ["Latte", "Frappe", "Macchiato", "Mocha"]
 ==/UserStyle== */
