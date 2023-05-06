@@ -8,10 +8,11 @@
 @preprocessor   stylus
 @updateURL      https://github.com/mustafakhalaf-git/example/raw/main/src/catppuccin.user.css
 @license        MIT
-@var select darktheme "Theme" ["Latte", "Frappe", "Macchiato", "Mocha"]
+@var select theme "Theme" ["Latte", "Frappe", "Macchiato", "Mocha"]
+@var select theme_color "theme_color" ["Rosewater", "Flamingo", "Pink", "Mauve", "Red", "Maroon", "Peach", "Yellow", "Green", "Teal", "Sky", "Sapphire", "Blue", "Lavender"]
 ==/UserStyle== */
 
-@-moz-document regexp("http://example.(com|net|org|edu)/") {
+@-moz-document regexp("http://example.(com|net|org)/") {
     colourscheme(flavour) {
         if (flavour=="Latte") {
             --ctp-rosewater: #dc8a78;
@@ -126,12 +127,26 @@
             --ctp-crust: #11111b;
         }
     }
-
+    
     body {
-        if (darktheme=="Latte")     { colourscheme(Latte) }
-        if (darktheme=="Frappe")    { colourscheme(Frappe) }
-        if (darktheme=="Macchiato") { colourscheme(Macchiato) }
-        if (darktheme=="Mocha")     { colourscheme(Mocha) }
+        if (theme=="Latte")     { colourscheme(Latte) }
+        if (theme=="Frappe")    { colourscheme(Frappe) }
+        if (theme=="Macchiato") { colourscheme(Macchiato) }
+        if (theme=="Mocha")     { colourscheme(Mocha) }
+        if (theme_color=="Rosewater") { --color: var(--ctp-rosewater) }
+        if (theme_color=="Flamingo")  { --color: var(--ctp-flamingo) }
+        if (theme_color=="Pink")      { --color: var(--ctp-pink) }
+        if (theme_color=="Mauve")     { --color: var(--ctp-mauve) }
+        if (theme_color=="Red")       { --color: var(--ctp-red) }
+        if (theme_color=="Maroon")    { --color: var(--ctp-maroon) }
+        if (theme_color=="Peach")     { --color: var(--ctp-peach) }
+        if (theme_color=="Yellow")    { --color: var(--ctp-yellow) }
+        if (theme_color=="Green")     { --color: var(--ctp-green) }
+        if (theme_color=="Teal")      { --color: var(--ctp-teal) }
+        if (theme_color=="Sky")       { --color: var(--ctp-sky) }
+        if (theme_color=="Sapphire")  { --color: var(--ctp-sapphire) }
+        if (theme_color=="Blue")      { --color: var(--ctp-blue) }
+        if (theme_color=="Lavender")  { --color: var(--ctp-lavender) }
     }
     body {
       background-color: var(--ctp-base) !important;
@@ -141,6 +156,6 @@
       color: var(--ctp-text) !important;
     }
     a:link, a:visited {
-      color: var(--ctp-blue) !important;
+      color: var(--color) !important;
     }
 }
