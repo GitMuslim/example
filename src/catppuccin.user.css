@@ -12,7 +12,7 @@
 @var select theme_color "theme_color" ["Rosewater", "Flamingo", "Pink", "Mauve", "Red", "Maroon", "Peach", "Yellow", "Green", "Teal", "Sky", "Sapphire", "Blue", "Lavender"]
 ==/UserStyle== */
 
-@-moz-document regexp("http://example.(com|net|org)/") {
+@-moz-document regexp("http://example.(com|net|org|edu)/") {
     colourscheme(flavour) {
         if (flavour=="Latte") {
             --ctp-rosewater: #dc8a78;
